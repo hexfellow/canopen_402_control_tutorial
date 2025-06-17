@@ -1,0 +1,18 @@
+[package]
+name = "canopen_402_pdo_reader"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+futures-channel = "0.3.31"
+futures-util = "0.3.31"
+tokio = { version = "1.41.0", features = ["full"] }
+env_logger = "0.11.5"
+clap = { version = "4.5.20", features = ["derive"] }
+once_cell = "1.20.2"
+serde = { version = "1.0.213", features = ["derive"] }
+thiserror = "1.0.65"
+log = { version = "0.4.22", features = ["std"] }
+tokio-util = "0.7.12"
+lazy_static = "1.4.0"
+socketcan = { version = "3.5.0", features = ["tokio", "enumerate"] }
